@@ -540,10 +540,10 @@ console.log("Ticket Fare:", fare, "tk");
 year >= 18 ? console.log("adult") : console.log("minor"); //adult
 
 
-let resultt = age >= 18 ? "adult" : "minor";
-console.log(resultt);
+let resultt = year >= 18 ? "adult" : "minor";
+console.log(resultt); // adult
 
-let score
+
 
 
 
