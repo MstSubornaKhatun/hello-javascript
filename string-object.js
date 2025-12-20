@@ -209,3 +209,12 @@ console.log(college.unique.color); // blue
 college.unique.result.merit = 'top top most';
 console.log(college['unique'].result.merit); // top top most
 
+delete college.class;
+console.log(college);
+// {
+//   name: 'vnc',
+//   events: [ 'science fair', 'bijoy dibos', '21 Feb' ],
+//   unique: { color: 'blue', result: { gpa: 5, merit: 'top top most' } }
+// }
+
+
