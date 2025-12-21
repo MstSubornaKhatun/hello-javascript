@@ -173,3 +173,80 @@ console.log(isOdd(7)); // true
 console.log('------------------*------------------');
 
 
+/**
+ * Objective: write a function to give me the sum of all numbers in an array
+ * step-1: declare a function
+ * step-2: call check whether the function  is called properly
+ * step-3: set a parameter(s)
+ * step-4: pas the parameter(s), check whether parameter is passed in a proper format
+ * step-5: do the function tasks (step by step)
+*/
+
+function sumOfNumbers(numbers) {
+    let sum = 0;
+    for(const number of numbers){
+        console.log(number);
+//          4
+//          2
+//          1
+//          6
+        sum = sum + number;
+    }
+    return sum;
+}
+const numbs = [4, 2, 1, 6];
+const sum = sumOfNumbers(numbs);
+console.log('Sum of numbers is', sum); // Sum of numbers is 13
+
+
+
+
+console.log('------------*------------');
+// even only
+/**
+ * create function that will return only the even numbers
+ * return the sum of even numbers
+*/
+
+function evenNumbersOnly(numbers) {
+    const evens = [];
+    for (const number of numbers) {
+        if (number % 2 === 0) {
+            console.log(number);
+            evens.push(number);
+        }
+    }
+    return evens;
+}
+
+const numbers = [5, 8, 91, 24, 6];
+const evens = evenNumbersOnly(numbers);
+console.log('even numbers are', evens)
+
+// 8
+// 24
+// 6
+// even numbers are [ 8, 24, 6 ]
+
+console.log('------------55----------');
+
+
+function sumOfEvenNumbers(numbers) {
+    let sum = 0;
+    for (const number of numbers) {
+        if (number % 2 === 0) {
+            console.log(number);
+            sum = sum + number;
+        }
+    }
+    return sum;
+}
+
+const sum2 = sumOfEvenNumbers(numbers);
+
+console.log('sum of the even numbers is', sum2);
+
+// 8
+// 24
+// 6
+// sum of the even numbers is 38
